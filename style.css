@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
+
+        body {
+            margin: 0; /* margem externa dos elementos */
+            padding: 0; /* margem interna dos elementos */
+        }
+        /*Menu de navegação principal*/
+        #principal{
+            width: 100%;
+            height: 100px;
+            border: 1px solid black;
+            background-color: #303030; /* valores hexadecimal */
+            display: flex;
+            justify-content: space-between;/*espaço entre os elementos p/ melhor divisão*/
+            align-items: center;
+            border-bottom: 1px solid #bababa;
+        }
+            #menu{
+                display: flex; /* flex organização para facilitar a posição dos elementos*/
+                width: 50%; /* define o tmanho da div*/
+                justify-content:space-around ; /* distribui igualmente*/
+                align-items: center; /* alinhar os items ao centro verticalmente*/
+                margin-left: 5%;
+            }
+            #principal div a{
+                font-family: 'Inter'; /* definir fonte*/
+                font-size: 25px; /* tamanho fonte*/
+                font-weight: 600; /* espessura*/
+                color: white;
+                text-decoration:none;
+            }
+            
+            #principal div a:hover{
+                color:#CCCCCC;} /*pseudoclasse para mudar cor quando passar o mouse no local*/
+
+            #principal button{
+                margin-right: 5%;/* margem direita*/
+                background-color: #0C70F2; 
+                border: 0;
+                height: 40px;
+                width: 80px;
+                font-family:'Inter';
+                font-size: 20px;
+                font-weight: 600px;
+                color: white;
+                box-shadow: 3px 2px 4px rgba (12, 112, 242, 0.25); /* sombreamento*/
+                cursor: pointer;/* mãozinha do mouse*/
+            }
